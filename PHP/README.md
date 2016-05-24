@@ -1,6 +1,6 @@
 # PHP tests
 
-Herein are various datastructure tests for PHP as well as some general fun puzzles written in PHP.
+Various datastructure tests for PHP.
 
 ### General Guidelines:
 - We expect good performance.
