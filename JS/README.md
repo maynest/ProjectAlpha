@@ -1,15 +1,17 @@
-Problem statement
+Problem statements
 =================
-Implement compile_csv_search() that parses text in the CSV format.
-
-- Assume field values do not contain quotes or other special characters.
-- Assume that all values in the key field are unique.
 - Assume that features of the most recent language standard are available.
 - We expect good performance.
 - If missing more requirements details, just make reasonable assumptions of
 your own.
 - Solution must be simple and compact. No defensive coding, no comments, no
 unrequested features.
+
+## CSV
+Implement compile_csv_search() that parses text in the CSV format.
+
+- Assume field values do not contain quotes or other special characters.
+- Assume that all values in the key field are unique.
 - Only one file 10-15 lines of code.
 
     Sample usage:
@@ -26,4 +28,32 @@ will print:
 ```
 {ip: "10.52.5.1", name: "server2", desc: "Backup Server"}
 undefined
+```
+
+## PrioritizedQueue
+
+Implement a Priority Queue. This should function like a normal queue, but allowing for retrieving the top priority item, rather than the first in.
+
+ - Assume that features of the most recent language standard are available.
+ - We expect good performance.
+ - If missing more requirements details, just make reasonable assumptions of
+ your own.
+
+
+Example Usage:
+```js`
+    queue = new PriorityQueue();
+    var dataObjectOne = {thing: "value"};
+    var priorityOne = 1;
+    var dataObjectTwo = {thing: "value2"};
+    var priorityOne = 2;
+    queue.push(dataObjectOne,priority);
+    queue.push(dataObjectTwo,priority);
+
+    var data = queue.pop();
+    console.log(data);
+````
+Example output:
+```js
+    {thing: "value2"}
 ```
