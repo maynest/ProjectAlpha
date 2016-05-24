@@ -20,4 +20,4 @@ multiplicative persistence: 1
 
 multiplicative digital root: 0
 ***
-Write the function called `calculateRoot()` in Persistance.php that would calculate the multiplicative digital root `$input`.
+Write the function called `calculateRoot()` in Persistance.php that would calculate the multiplicative digital root of `$input`.
