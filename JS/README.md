@@ -8,9 +8,9 @@ Implement compile_csv_search() that parses text in the CSV format.
 - We expect good performance.
 - If missing more requirements details, just make reasonable assumptions of
 your own.
-
-    Solution must be simple and compact. No defensive coding, no comments, no
-unrequested features. Only one file 10-15 lines of code.
+- Solution must be simple and compact. No defensive coding, no comments, no
+unrequested features.
+- Only one file 10-15 lines of code.
 
     Sample usage:
  ```js
