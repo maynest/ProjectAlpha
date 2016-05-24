@@ -1,7 +1,7 @@
 # Prompt:
 
  Implement ActualCollection and ActualSortedCollection
- such that the example application below outputs the expected results
+ such that the example application in TestCollections outputs the expected results
 
  This implementation should be general purpose, scalable and readable.
 
