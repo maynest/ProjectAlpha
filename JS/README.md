@@ -41,7 +41,7 @@ Implement a Priority Queue. This should function like a normal queue, but allowi
 
 
 Example Usage:
-```js`
+```js
     queue = new PriorityQueue();
     var dataObjectOne = {thing: "value"};
     var priorityOne = 1;
