@@ -46,9 +46,9 @@ Example Usage:
     var dataObjectOne = {thing: "value"};
     var priorityOne = 1;
     var dataObjectTwo = {thing: "value2"};
-    var priorityOne = 2;
-    queue.push(dataObjectOne,priority);
-    queue.push(dataObjectTwo,priority);
+    var priorityTwo = 2;
+    queue.push(dataObjectOne,priorityOne);
+    queue.push(dataObjectTwo,priorityTwo);
 
     var data = queue.pop();
     console.log(data);
