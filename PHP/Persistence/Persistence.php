@@ -6,19 +6,19 @@ $printArray = [];
 foreach($inputArray as $input) {
 
 	$printArray[] = [
-		'result' => persistence($input),
+		'result' => calculateRoot($input),
 		'input' => $input
 	];
 
 }
 
-function persistence($number) {
+function calculateRoot($number) {
 	/*
 		Calculate the number here
 	*/
 }
 
 foreach($printArray as $result) {
-	echo "The persistence number of ".$result['input']." is ".$result['result'].".".PHP_EOL;
+	echo "The multiplicative digital root of ".$result['input']." is ".$result['result'].".".PHP_EOL;
 }
 
