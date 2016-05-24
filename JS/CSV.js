@@ -32,10 +32,6 @@ undefined
 
 */
 
-
-
-
-
 var csv_by_name = compile_csv_search(
     "ip,name,desc\n"+
     "10.49.1.4,server1,Main Server\n"+
