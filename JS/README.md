@@ -47,10 +47,10 @@ Example Usage:
     var priorityOne = 1;
     var dataObjectTwo = {thing: "value2"};
     var priorityTwo = 2;
-    queue.push(dataObjectOne,priorityOne);
-    queue.push(dataObjectTwo,priorityTwo);
+    queue.enq(dataObjectOne,priorityOne);
+    queue.enq(dataObjectTwo,priorityTwo);
 
-    var data = queue.pop();
+    var data = queue.deq();
     console.log(data);
 ````
 Example output:

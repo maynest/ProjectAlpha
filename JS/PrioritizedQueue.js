@@ -16,18 +16,18 @@
 
 Example Usage:
 
-    queue = new PriorityQueue();
-    var dataObjectOne = {thing: "value"};
-    var priorityOne = 1;
-    var dataObjectTwo = {thing: "value2"};
-    var priorityOne = 2;
-    queue.push(dataObjectOne,priority);
-    queue.push(dataObjectTwo,priority);
-    
-    var data = queue.pop();
-    console.log(data);
+ queue = new PriorityQueue();
+ var dataObjectOne = {thing: "value"};
+ var priorityOne = 1;
+ var dataObjectTwo = {thing: "value2"};
+ var priorityTwo = 2;
+ queue.enq(dataObjectOne,priorityOne);
+ queue.enq(dataObjectTwo,priorityTwo);
+
+ var data = queue.deq();
+ console.log(data);
     
 Example output:
-    {thing: "value2"}
+ {thing: "value2"}
 */
 
