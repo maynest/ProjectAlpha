@@ -2,7 +2,7 @@
 
 /**
  * Use these three abstract classes that are defined to create a solution to the problem in README.md
- *  -Do not modify the abstract classes to satisfy class requirements-
+ *  -Do not modify the CardData abstract class to satisfy class requirements.-
  */
 
 abstract class CardData
