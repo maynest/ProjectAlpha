@@ -32,6 +32,28 @@ undefined
 
 */
 
+function compile_csv_search(csvString, lookAtHeader) {
+  return function(searchValue) {
+    var rows = csvString.split(/\n/g);
+    var csvHeader = rows[0].split(',');
+    var headerIndex = 0;
+    for (headerIndex = 0; headerIndex < csvHeader.length; headerIndex++) {
+      if (csvHeader[headerIndex] == lookAtHeader) break;
+    }
+    for (i = 1; i < rows.length - 1; i++) {
+      var csvData = rows[i].split(',');
+      if (csvData[headerIndex] == searchValue) {
+        var res = [];
+        for (j = 0; j < csvHeader.length; j++) {
+          res.push(csvHeader[j] + ': "' + csvData[j] + '"');
+        }
+        return '{' + res.join(', ') + '}';
+      }
+    }
+    return 'undefined';
+  }
+}
+
 var csv_by_name = compile_csv_search(
     "ip,name,desc\n"+
     "10.49.1.4,server1,Main Server\n"+
